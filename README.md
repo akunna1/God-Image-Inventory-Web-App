@@ -14,3 +14,8 @@ God Image Inventory:  a psychological tool used to assess how individuals percei
 - login for counselors (counselors and cilents should have different tags in the db)
 - login for cilents
 - login button changes to logout button. Once logged out take to homepage
+
+### Issues, Questions, and Suggestions
+- I need to see what happens beyond the login for cilents and counselors
+- which pages do you want only counselors and clients to see?
+- Example Report should be under Introduction or Orientation
