@@ -7,9 +7,10 @@ God Image Inventory:  a psychological tool used to assess how individuals percei
 - npm install react-router-dom
 - npm install react-icons
 
-### Requirements
-- account creation for counselors
-- account creation for cilents
-- login for counselors
+### Requirements (For frontend)
+- After clicking login button, go to login page. There should also be a Sign up button there
+- sign up --> account creation for counselors
+- sign up --> account creation for cilents
+- login for counselors (counselors and cilents should have different tags in the db)
 - login for cilents
 - login button changes to logout button. Once logged out take to homepage
