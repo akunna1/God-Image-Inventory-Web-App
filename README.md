@@ -16,7 +16,7 @@ God Image Inventory Scoring Program WebApp for Jay Gattis
 - sign up --> account creation for cilents
 - login for counselors (counselors and cilents should have different tags in the db)
 - login for cilents
-- login button changes to logout button. Once logged out take to homepage
+- login button changes to logout button. Once logged out, take user to homepage immediatement 
 
 ### Issues, Questions, and Suggestions 🤔❓
 - I need to see what happens beyond the login for cilents and counselors
