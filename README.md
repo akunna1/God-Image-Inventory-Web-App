@@ -7,6 +7,9 @@ God Image Inventory:  a psychological tool used to assess how individuals percei
 - npm install react-router-dom
 - npm install react-icons
 
-### Colors
-- green: #509238
-- darker green: #328639
+### Requirements
+- account creation for counselors
+- account creation for cilents
+- login for counselors
+- login for cilents
+- login button changes to logout button. Once logged out take to homepage
