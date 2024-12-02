@@ -19,3 +19,4 @@ God Image Inventory:  a psychological tool used to assess how individuals percei
 - I need to see what happens beyond the login for cilents and counselors
 - which pages do you want only counselors and clients to see?
 - Example Report should be under Introduction or Orientation
+- Menu- introduction, orientation, About, Contact
