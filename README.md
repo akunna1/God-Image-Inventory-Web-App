@@ -7,6 +7,9 @@ God Image Inventory:  a psychological tool used to assess how individuals percei
 - npm install react-router-dom
 - npm install react-icons
 
+### Progress 
+- Currently working on Frontend...
+  
 ### Requirements (For frontend)
 - After clicking login button, go to login page. There should also be a Sign up button there
 - sign up --> account creation for counselors
