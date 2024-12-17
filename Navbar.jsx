@@ -27,15 +27,15 @@ const Navbar = () => {
             className="h-full w-36 cursor-pointer"
           />
         </Link>
-        <a href="#" className="text-2xl" onClick={toggleSmallMenu}>
-          {toggleSmall ? <IoCloseOutline /> : <CgMenuRight />} {/* Burger Menu Icon for Small Screens */}
+        <a href="#" className="text-2xl text-[#005286]" onClick={toggleSmallMenu}>
+          {toggleSmall ? <IoCloseOutline /> : <CgMenuRight />} {/* Right Burger Menu Icon for Small Screens */}
         </a>
       </div>
 
       {/* Medium Screens: Left burger menu, logo, and login button on right */}
       <div className="hidden md:flex md:items-center md:justify-between md:w-full lg:hidden pr-7">
         <div className="flex items-center space-x-8">
-          <a href="#" className="text-3xl" onClick={toggleMediumMenu}>
+          <a href="#" className="text-3xl text-[#005286]" onClick={toggleMediumMenu}>
             {toggleMedium ? <IoCloseOutline /> : <CgMenuLeft />} {/* Left Burger Menu Icon for Medium Screens */}
           </a>
           <Link to="/">
@@ -46,9 +46,13 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <button className="px-5 py-3 button-3d font-medium uppercase rounded-2xl text-white bg-gradient-to-bl from-[#0eb2e5] via-[#064970] to-[#042636] hover:bg-gradient-to-br hover:from-[#0eb2e5] hover:via-[#064970] hover:to-[#042636]">
-          Login
-        </button>
+        
+        <Link to="/login">
+          <button className="px-5 py-3 button-3d font-medium uppercase rounded-2xl text-white bg-gradient-to-bl from-[#0eb2e5] via-[#064970] to-[#042636] hover:bg-gradient-to-br hover:from-[#0eb2e5] hover:via-[#064970] hover:to-[#042636]">
+            Login
+          </button>
+        </Link>
+
       </div>
 
       {/* Large Screens: Logo, menu items, and login button */}
@@ -66,13 +70,16 @@ const Navbar = () => {
         <div className="flex items-center space-x-8">
           <div className="flex items-center space-x-7">
             <Link to="/overview" className="font-medium uppercase text-sm text-[#005286] hover:text-gray-400">Overview</Link>
-            <Link to="/guide" className="font-medium uppercase text-sm text-[#005286] hover:text-gray-400">Guide</Link>
+            <Link to="/forum" className="font-medium uppercase text-sm text-[#005286] hover:text-gray-400">Forum</Link>
             <Link to="/about" className="font-medium uppercase text-sm text-[#005286] hover:text-gray-400">About</Link>
             <Link to="/contact" className="font-medium uppercase text-sm text-[#005286] hover:text-gray-400">Contact</Link>
           </div>
-          <button className="px-5 py-3 button-3d font-medium uppercase rounded-2xl text-white bg-gradient-to-bl from-[#0eb2e5] via-[#064970] to-[#042636] hover:bg-gradient-to-br hover:from-[#0eb2e5] hover:via-[#064970] hover:to-[#042636]">
-            Login
-          </button>
+
+          <Link to="/login">
+            <button className="px-5 py-3 button-3d font-medium uppercase rounded-2xl text-white bg-gradient-to-bl from-[#0eb2e5] via-[#064970] to-[#042636] hover:bg-gradient-to-br hover:from-[#0eb2e5] hover:via-[#064970] hover:to-[#042636]">
+              Login
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -81,13 +88,16 @@ const Navbar = () => {
   <div className="absolute top-14 right-0 w-64 rounded-lg bg-gradient-to-bl from-[#fafafa] via-[#f2f2f2] to-[#d5d5d5] shadow-lg z-40 border-2 border-gray-300">
     <div className="flex flex-col py-2">
       <Link to="/overview" className="px-4 py-2 uppercase text-sm text-[#005286] border-b border-gray-300 hover:text-[#007BFF] hover:border-[#007BFF] transition-all"> Overview </Link>
-      <Link to="/guide" className="px-4 py-2 uppercase text-sm text-[#005286] border-b border-gray-300 hover:text-[#007BFF] hover:border-[#007BFF] transition-all"> Guide </Link>
+      <Link to="/forum" className="px-4 py-2 uppercase text-sm text-[#005286] border-b border-gray-300 hover:text-[#007BFF] hover:border-[#007BFF] transition-all"> Forum </Link>
       <Link to="/about" className="px-4 py-2 uppercase text-sm text-[#005286] border-b border-gray-300 hover:text-[#007BFF] hover:border-[#007BFF] transition-all"> About </Link>
       <Link to="/contact" className="px-4 py-2 uppercase text-sm text-[#005286] border-b border-gray-300 hover:text-[#007BFF] hover:border-[#007BFF] transition-all"> Contact </Link>
 
       <div className="px-4 mt-3 text-center mb-3">
-        <button className="w-fit px-5 py-3 button-3d font-medium uppercase rounded-2xl text-white bg-gradient-to-bl from-[#0eb2e5] via-[#064970] to-[#042636] hover:bg-gradient-to-br hover:from-[#0eb2e5] hover:via-[#064970] hover:to-[#042636]"> Login </button>
-    </div>
+        <Link to="/login">
+          <button className="w-fit px-5 py-3 button-3d font-medium uppercase rounded-2xl text-white bg-gradient-to-bl from-[#0eb2e5] via-[#064970] to-[#042636] hover:bg-gradient-to-br hover:from-[#0eb2e5] hover:via-[#064970] hover:to-[#042636]"> Login </button>
+        </Link>
+      </div>
+
   </div>
   </div>
 )}
@@ -98,7 +108,7 @@ const Navbar = () => {
         <div className="absolute top-16 left-0 w-64 rounded-lg bg-gradient-to-bl from-[#fafafa] via-[#f2f2f2] to-[#d5d5d5] shadow-lg z-40 border-2 border-gray-300">
           <div className="flex flex-col py-2">
             <Link to="/overview" className="px-4 py-2 uppercase text-sm text-[#005286] border-b border-gray-300 hover:text-gray-400">Overview</Link>
-            <Link to="/guide" className="px-4 py-2 uppercase text-sm text-[#005286] border-b border-gray-300 hover:text-gray-400">Guide</Link>
+            <Link to="/forum" className="px-4 py-2 uppercase text-sm text-[#005286] border-b border-gray-300 hover:text-gray-400">Forum</Link>
             <Link to="/about" className="px-4 py-2 uppercase text-sm text-[#005286] border-b border-gray-300 hover:text-gray-400">About</Link>
             <Link to="/contact" className="px-4 py-2 uppercase text-sm text-[#005286] hover:text-gray-400">Contact</Link>
           </div>
